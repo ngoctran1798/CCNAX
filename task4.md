@@ -1,5 +1,5 @@
 Người Thực Hiện: Trần Thị Ngọc  
-Ngày Cập Nhật: 07/11/2017   
+Ngày Cập Nhật: 03/12/2017   
 -----   
 ## 1.Entheret là gì?    
 ![imgur](https://i.dowload.vn/data/image/2017/07/10/LAN-Ethernet-10.jpg)  
