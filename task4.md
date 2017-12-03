@@ -1,7 +1,7 @@
 Người Thực Hiện: Trần Thị Ngọc  
 Ngày Cập Nhật: 07/11/2017   
 -----   
-##1.Entheret là gì?    
+## 1.Entheret là gì?    
 ![imgur](https://i.dowload.vn/data/image/2017/07/10/LAN-Ethernet-10.jpg)  
 **Ethernet là một trong số những phương tiện mà bạn có thể sử dụng để tạo ra một mạng LAN, bao gồm cả Wi-Fi, Bluetooth và USB.Những thứ này có thể được sử dụng để tạo ra một mạng cục bộ hoặc có thể cùng tồn tại trong cùng một mạng.** Trong khi mạng không dây có sự tiện lợi riêng của nó thì Ethernet vẫn giữ nhiều vai trò quan trọng, như:
 
@@ -22,7 +22,7 @@ Ngày Cập Nhật: 07/11/2017
 ![Imgur](https://i.imgur.com/SKEknv3.jpg)
 
 
-##2.Tìm hiểu cấu trúc Ethernet Frame?
+## 2.Tìm hiểu cấu trúc Ethernet Frame?
 
 ![Imgur](https://i.imgur.com/x4aSC0X.png)
 
@@ -36,7 +36,7 @@ Source Address (6 bytes): cho biết địa chỉ MAC của thiết bị gửi f
 - **FCS (4 bytes):** được dùng để check lỗi của frame Ethernet.
 
 -----
-##3.LAN Standards?
+## 3.LAN Standards?
 **Mạng LAN (mạng nội bộ) là một hệ thống truyền thông cho phép kết nối và chia sẻ các tài nguyên giữa các thiết bị độc lập trong một khu vực địa lý có kích thước vừa phải. Các chủ đề này giới thiệu các loại mạng cục bộ được hỗ trợ bởi hệ thống iSeries ™:**
 
 - **Mạng DDI (giao diện dữ liệu phân tán)**
@@ -92,7 +92,7 @@ Trong đó:
 	- Hub là 1 Collision Domain
 
 ----
-##6. So sánh việc truyền tải giữa Hub và Switch?
+## 6.So sánh việc truyền tải giữa Hub và Switch?
 ![Imgur](https://i.imgur.com/0Ql6Ihi.jpg)
 
 *Hub và switch cả hai thiết bị này đều có những vai trò tương tự trên mạng. Mỗi thiết bị dều đóng vai trò kết nối trung tâm cho tất cả các thiết bị mạng, và xử lý một dạng dữ liệu được gọi là “frame” (khung). Mỗi khung đều mang theo dữ liệu. Khi khung được tiếp nhận, nó sẽ được khuyếch đại và truyền tới cổng của PC đích. Sự khác biệt lớn nhất giữa hai thiết bị này là phương pháp phân phối các khung dữ liệu.*
@@ -114,7 +114,7 @@ Trong đó:
 	- Switch lưu lại bản ghi nhớ địa chỉ MAC của tất cả các thiết bị mà nó kết nối tới. Với thông tin này, switch có thể xác định hệ thống nào đang chờ ở cổng nào. Khi nhận được khung dữ liệu, switch sẽ biết đích xác cổng nào cần gửi tới, giúp tăng tối đa thời gian phản ứng của mạng. Và không giống như hub, một switch 10/100Mbps sẽ phân phối đầy đủ tỉ lệ 10/100Mbps cho mỗi cổng thiết bị. Do vậy với switch, không quan tâm số lượng PC phát dữ liệu là bao nhiêu, người dùng vẫn luôn nhận được băng thông tối đa. Đó là lý do tại sao switch được coi là lựa chọn tốt hơn so với hub.
 
 ----
-##7. Phương pháp CSMA/CD?
+## 7.Phương pháp CSMA/CD?
 **Carrier Sense Multiple Access with Collision Detect (viết tắt CSMA/CD)** trong tiếng Anh, nghĩa là đa truy cập nhận biết sóng mang phát hiện xung đột. Đây là một trong nhiều phương pháp truy cập hay sử dụng trong mạng LAN, cải tiến từ phương pháp CSMA. Theo phương pháp này, khi một máy tính muốn truyền một gói tin, trước tiên nó sẽ lắng nghe xem trên đường truyền có sóng mạng hay không (bằng cách lắng nghe tín hiệu Carrier). Nếu không có, nó sẽ thực hiện truyền gói tin (theo frame). Sau khi truyền gói tin, nó vẫn tiếp tục lắng nghe để xem có máy nào định truyền tin hay không. Nếu không có xung đột, máy tính sẽ truyền gói tin cho đến hết. Nếu phát hiện xung đột, nó sẽ gửi broadcast một gói tin báo hiệu cho các máy trên mạng không nên gửi tin để tránh làm nhiễu đường truyền,sau đó chờ một khoảng thời gian ngẫu nhiên trước khi tiến hành gửi lại gói tin. Tiến trình các bước như sau: 
 
 - Một thiết bị có frame cần truyền sẽ lắng nghe đường truyền cho đến khi nào đường truyền Ethernet không còn bị chiếm.
@@ -127,7 +127,7 @@ Trong đó:
 *CSMA/CD được phát triển từ CSMA để tăng hiệu quả của phương thức CSMA, bằng cách dừng việc truyền tín hiệu ngay khi phát hiện thấy xung đột, giảm thiểu thời gian chờ để thực hiện việc truyền tiếp theo. (CSMA không kết thúc việc truyền dữ liệu nếu phát hiện xung đột, những máy đang truyền sẽ tiếp tục truyền, những máy gây xung đột sau khi nhận được thông báo sẽ dừng một khoảng thời gian trước khi cố gắng truyền tiếp).*
 
 -----
-##8.ARP? Cơ chế hoạt động của ARP trong cùng LAN? Khác LAN?
+## 8.ARP? Cơ chế hoạt động của ARP trong cùng LAN? Khác LAN?
 Trong hệ thống mạng máy tính có hai loại địa chỉ được gán cho một máy tính:
 
 - Địa chỉ logic: là địa chỉ của các giao thức mạng như IP, IPX … Loại địa chỉ này mang tính chất tương đối, có thể thay đổi theo sự cần thiết của người sử dụng. Loại địa chỉ này có hai phần: Phần network để phân định hoạt động của máy trong các mạng khác nhau và giúp dễ dàng định tuyến cho các gói tin cần chuyển đi giữa các interface của các router,  phần Host để phân biệt các máy trong cùng một mạng.
